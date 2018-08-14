@@ -1,5 +1,13 @@
 ## The cachematrix.R file creates a special "matrix" object that 
 ## can cache its inverse.
+##
+## Instructions to use the functions 'makeCacheMatrix' and 'cacheSolve':
+## Define a matrix: Example, myMatrix <- matrix(c(1,3,1,0),2,2);
+## Call the function 'makeCacheMatrix': Result <- makeCacheMatrix(myMatrix)
+## Call Inverse <- cacheSolve(myMatrix)
+## Calling caceSolve(myMatrix) again, we see that the function 
+## makes use of the 'Result' this time.
+###########################################################################
 
 
 ## The makeCacheMatrix function creates a special "matrix", 
